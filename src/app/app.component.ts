@@ -5,8 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
+  selector: 'app-root',               // app.component.ts -> index.html
+  templateUrl: 'app.component.html',  // usando app.component.htmlcomo modelo
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {

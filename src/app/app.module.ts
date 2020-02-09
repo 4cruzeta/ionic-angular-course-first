@@ -18,6 +18,6 @@ import { AppRoutingModule } from './app-routing.module';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // main.ts ->  app.module.ts -> app.component.ts
 })
 export class AppModule {}
