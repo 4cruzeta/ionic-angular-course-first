@@ -1,19 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>recipe-detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/recipes"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ loadedRecipe.title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid no-padding>
+  <ion-grid class="ion-no-padding"> <!-- "no-padding" deprecated -> class="ion-no-padding" -->
     <ion-row>
-      <ion-col no-padding>
+      <ion-col class="ion-no-padding"> <!-- "no-padding" deprecated -> class="ion-no-padding" -->
         <ion-img [src]="loadedRecipe.imageUrl"></ion-img>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <h1 text-center>{{ loadedRecipe.title }}</h1>
+        <h1 class="ion-text-center">{{ loadedRecipe.title }}</h1> <!-- "text-center" deprecated -> class="ion-text-center" -->
       </ion-col>
     </ion-row>
     <ion-row>
