@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 
+import { Recipe } from './recipe.module';
+
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -21,7 +25,7 @@ export class RecipesService {
     }
   ];
 
-  constructor() { }
+  constructor() {}
 
   getAllRecipes() {
     return [...this.recipes];
